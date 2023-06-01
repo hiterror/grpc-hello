@@ -1,5 +1,8 @@
 syntax = "proto3";
 
+/**
+    用";"分割， 前面部分 "." 表示生成路径。 后面部分 "service" 表示生成的包名
+ */
 option go_package = ".;service";
 
 service SayHello {
