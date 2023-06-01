@@ -24,7 +24,7 @@ func (c ClientTokenAuth) RequireTransportSecurity() bool {
 
 func main() {
 	creds, _ := credentials.NewClientTLSFromFile(
-		"/Users/caiwei/tech/terminate/example/grpc/configs/test.pem",
+		"./configs/test.pem",
 		"*.jiujiayi.com",
 	)
 	_ = creds

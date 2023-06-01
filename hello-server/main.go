@@ -47,8 +47,8 @@ func (s *Server) SayHello(ctx context.Context, req *pb.HelloRequest) (*pb.HelloR
 
 func main() {
 	creds, err := credentials.NewServerTLSFromFile(
-		"/Users/caiwei/tech/terminate/example/grpc/configs/test.pem",
-		"/Users/caiwei/tech/terminate/example/grpc/configs/test.key",
+		"./configs/test.pem",
+		"./configs/test.key",
 	)
 	if err != nil {
 		glog.Error(err)
